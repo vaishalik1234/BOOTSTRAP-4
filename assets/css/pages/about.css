@@ -1,0 +1,16 @@
+.aboutSlider .item > p:nth-child(1) {
+  margin: 0 !important;
+}
+.aboutSlider .owl-theme .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

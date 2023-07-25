@@ -1,0 +1,24 @@
+.aboutSlider {
+    .item {
+        > p:nth-child(1) {
+            margin: 0 !important;
+        }
+    }
+
+     .owl-nav {
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .owl-prev {
+        transform: translateX(-40px);
+    }
+    .owl-next {
+        transform: translateX(30px);
+    }
+}
