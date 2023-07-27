@@ -4,18 +4,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js" integrity="sha512-oaWLach/xXzklmJDBjHkXngTCAkPch9YFqOSphnw590sy86CVEnAbcpw17QjkUGppGmVJojwqHmGO/7Xxx6HCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap 4</title>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-  <body>
+  <body> 
     
     <!-- ############ Navbar section starts here ############### -->
-
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark myNavbar">
       <a class="navbar-brand" href="index.html">
         <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fk-plus_3b0baa.png" alt="">
@@ -44,7 +46,6 @@
        
       </div>
     </nav>
-  
     <main>
       <!-- ###################### main slider section starts here ########## -->
       <section class="mainSlider">
@@ -166,7 +167,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 text-white text-center">
-              <a href="javascript:;"> 
+              <a href="javascript:;" data-toggle="modal" data-target="#youtubeModal"> 
                 <i class="fa fa-play fa-3x text-white mb-4"></i>
               </a>
               <h3 class="text-capitalize font-weight-bold mb-2 mb-md-3 mb-lg-4">
@@ -174,6 +175,62 @@
               </h3>
               
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ############################## photo Gallary start here ##############################-->
+
+      <section class="photoGallary py-5" id="photo-gallery">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <h3 class="text-capitalize mb-2 mb-md-3 mb-lg-4">
+                photo-gallery
+              </h3>
+              <p>
+                checkout out our photots
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+              <a data-width="560" data-height="560" data-lightbox="image-1" data-title="My caption"
+               href="https://source.unsplash.com/random/?javascript/560*560">
+                <img src="https://source.unsplash.com/random/?javascript/560*560" alt="">
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+              <a data-width="560" data-height="560" data-lightbox="image-1" data-title="My caption"
+               href="https://source.unsplash.com/random/?angular/560*560">
+                <img src="https://source.unsplash.com/random/?angular/560*560" alt="">
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+              <a data-width="560" data-height="560" data-lightbox="image-1" data-title="My caption"
+               href="https://source.unsplash.com/random/?sports/560*560">
+                <img src="https://source.unsplash.com/random/?sports/560*560" alt="">
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+              <a data-width="560" data-height="560" data-lightbox="image-1" data-title="My caption"
+               href="https://source.unsplash.com/random/?nature/560*560">
+                <img src="https://source.unsplash.com/random/?nature/560*560" alt="">
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+              <a data-width="560" data-height="560" data-lightbox="image-1" data-title="My caption"
+               href="https://source.unsplash.com/random/?drinks/560*560">
+                <img src="https://source.unsplash.com/random/?drinks/560*560" alt="">
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+              <a data-width="560" data-height="560" data-lightbox="image-1" data-title="My carousel-caption"
+               href="https://source.unsplash.com/random/?animals/560*560">
+                <img src="https://source.unsplash.com/random/?animals/560*560" alt="">
+              </a>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -190,10 +247,10 @@
               </p>
               <form class="form-inline justify-content-center">
                 <label class="sr-only" for="name"> Name </label>
-                <input type="text" id="name" placeholder="Name" class="form-control">
+                <input type="text" id="name" placeholder="Name" class="form-control mb-3 mb-md-0">
                 <label class="sr-only" for="email"> Email </label>
-                <input type="text" id="Email" placeholder="Email" class="form-control mx-3">
-                <button type="submit" class="btn btn-primary">
+                <input type="text" id="Email" placeholder="Email" class="form-control  mb-3 mb-md-0 mx-0 mx-md-3">
+                <button type="submit" class="btn btn-primary submitBtn">
                   sign up
                 </button>
               </form>
@@ -209,10 +266,33 @@
         The Ultimate Coders 2023
       </p>
     </footer>
+    <!--- #################  position fixed element goes here ######################### -->
+
+    <div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="youtubeModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="350" src="https://www.youtube.com/embed/8dWL3wF_OMw" title="JavaScript Full Course for free 🌐 (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js" integrity="sha512-oaWLach/xXzklmJDBjHkXngTCAkPch9YFqOSphnw590sy86CVEnAbcpw17QjkUGppGmVJojwqHmGO/7Xxx6HCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
- </body>
+  </body>
 </html>
+
  
